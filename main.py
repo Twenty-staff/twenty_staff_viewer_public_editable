@@ -1,9 +1,10 @@
 import streamlit as st
 import pandas as pd
 
-# ロゴ画像の表示（左上に表示）
-st.image("logo.jpeg", width=200)  # 幅は調整OK
-
+# ロゴを中央に配置
+col1, col2, col3 = st.columns([1, 2, 1])
+with col2:
+    st.image("logo.jpeg", use_column_width=True)
 # ページ設定＋ロゴ表示
 st.set_page_config(page_title="TWENTY STAFF VIEWER", page_icon="🟦", layout="centered")
 st.image("logo.jpeg", width=250)
