@@ -5,7 +5,8 @@ import streamlit as st
 # ロゴを中央に表示（これだけにする！）
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
-    st.image("logo.jpeg", use_column_width=True)
+    st.image("logo.jpeg", use_container_width=True)
+
 
 
 
