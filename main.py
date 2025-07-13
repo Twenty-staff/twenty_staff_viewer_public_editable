@@ -14,7 +14,7 @@ import streamlit as st
 import pandas as pd
 
 st.set_page_config(page_title="TWENTY STAFF VIEWER", layout="centered")
-st.title("👕 TWENTY STAFF VIEWER")
+st.title("TWENTY STAFF VIEWER")
 
 # Sample staff data
 data = pd.DataFrame([
@@ -29,7 +29,7 @@ data = pd.DataFrame([
 ])
 
 # スタッフ選択
-selected = st.selectbox("🧑 スタッフを選んでください", data["氏名"])
+selected = st.selectbox("スタッフを選んでください", data["氏名"])
 
 # 詳細表示
 if selected:
