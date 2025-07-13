@@ -34,7 +34,7 @@ selected = st.selectbox("スタッフを選んでください", data["氏名"])
 # 詳細表示
 if selected:
     staff = data[data["氏名"] == selected].iloc[0]
-    st.markdown(f"### 📝 {selected} さんのカルテ")
+    st.markdown(f"###  {selected} さんのカルテ")
     st.write(f"**所属**：{staff['所属']}")
     st.write(f"**入社年月**：{staff['入社年月']}")
     st.write(f"**ランク**：{staff['ランク']}")
