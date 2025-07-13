@@ -1,14 +1,13 @@
 import streamlit as st
 import pandas as pd
+import streamlit as st
 
-# ロゴを中央に配置
+# ロゴを中央に表示（これだけにする！）
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
     st.image("logo.jpeg", use_column_width=True)
-# ページ設定＋ロゴ表示
-st.set_page_config(page_title="TWENTY STAFF VIEWER", page_icon="🟦", layout="centered")
-st.image("logo.jpeg", width=250)
-st.markdown("### TWENTY STAFF VIEWER")
+
+
 
 import streamlit as st
 import pandas as pd
